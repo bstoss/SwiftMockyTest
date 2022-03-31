@@ -7,9 +7,9 @@ setup project made some problems ..
 - https://github.com/MakeAWishFoundation/SwiftyMocky 
 - Select SwiftyMocky Package and Target Unit Tests
 4. install CLI
-> brew install mint
-> mint install MakeAWishFoundation/SwiftyMocky
-> mint install krzysztofzablocki/Sourcery@1.8.0
+`brew install mint`
+`mint install MakeAWishFoundation/SwiftyMocky`
+`mint install krzysztofzablocki/Sourcery@1.8.0`
 5. now do `swiftymocky init` in project folder
 6. open generated Mockfile and replac after sourceryCommand: 
 - null -> mint run krzysztofzablocki/Sourcery@1.8.0 sourcery
