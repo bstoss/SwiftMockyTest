@@ -1,0 +1,22 @@
+sourceryCommand: mint run krzysztofzablocki/Sourcery@1.8.0 sourcery
+sourceryTemplate: null
+SwiftMockyTestsTests:
+  sources:
+    include:
+    - ./SwiftMockyTests
+  output: ./Mock.generated.swift
+  targets:
+  - SwiftMockyTestsTests
+  testable:
+  - SwiftMockyTests
+  import:
+  - Combine
+  - Foundation
+unit.tests.mock:
+  sources:
+    include:
+    - ./MyApp
+    exclude: []
+  output: ./MyAppUnitTests/Mocks/Mock.generated.swift
+  targets:
+  - MyAppUnitTests

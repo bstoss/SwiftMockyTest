@@ -8,6 +8,7 @@
 import Combine
 import Foundation
 
+//sourcery: AutoMockable
 protocol NetworkProtocol {
     func asyncLoad() async throws
 }
